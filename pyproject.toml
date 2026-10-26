@@ -1,0 +1,14 @@
+[project]
+name = "week16-harleydangan-lab-research-agent"
+version = "0.1.0"
+description = "Week 16 lab research agent"
+requires-python = ">=3.14"
+dependencies = [
+    "langchain-openai>=1.0.0",
+    "python-dotenv>=1.2.4",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
