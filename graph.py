@@ -35,21 +35,15 @@ load_dotenv(NOTEBOOK_PATH.parent / ".env", override=False)
 
 
 def _is_demo_cell(source: str) -> bool:
-    """Return True for the notebook cell that invokes the graph.
+    """Return True for notebook cells that run or print the compiled graph.
 
-    The start-node cell also mentions ``initial_state`` / ``app.invoke`` in a
-    comment, so the check looks at the first executable line instead.
+    Comment lines are ignored so the question-node cell's commented
+    ``app.invoke`` example is not mistaken for a demo cell.
     """
-    code_lines = [
-        line.strip()
-        for line in source.splitlines()
-        if line.strip() and not line.strip().startswith("#")
-    ]
-    return (
-        bool(code_lines)
-        and code_lines[0].startswith("initial_state = {")
-        and "app.invoke(initial_state)" in source
+    executable = "\n".join(
+        line for line in source.splitlines() if not line.strip().startswith("#")
     )
+    return "app.invoke(" in executable or "print_ascii(" in executable
 
 
 def _build_graph():

@@ -3,7 +3,12 @@
     "."
   ],
   "graphs": {
-    "research_agent": "./graph.py:graph"
+    "research_agent": {
+      "path": "./graph.py:graph",
+      "config": {
+        "recursion_limit": 10
+      }
+    }
   },
   "env": ".env"
 }

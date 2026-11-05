@@ -7,6 +7,10 @@ set "STUDIO_URL=https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:202
 set "PYTHONUTF8=1"
 set "PYTHONIOENCODING=utf-8"
 
+rem Graph-level run configuration (matches GRAPH_CONFIG in the notebook and the
+rem config block in langgraph.json). The local dev server reads LANGGRAPH_CONFIG.
+set "LANGGRAPH_CONFIG={"research_agent":{"recursion_limit":10}}"
+
 where uv >nul 2>nul
 if errorlevel 1 (
     echo [ERROR] uv is not installed or not on PATH.
