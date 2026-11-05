@@ -24,4 +24,5 @@ dependencies = [
 [dependency-groups]
 dev = [
     "ipykernel>=7.4.0",
+    "langgraph-cli[inmem]>=0.4.41",
 ]
