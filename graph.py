@@ -11,7 +11,11 @@ Start the local server with:
     uv run --env-file .env langgraph dev --allow-blocking
 
 ``--allow-blocking`` is required because the nodes call synchronous libraries
-(guardrails, requests, the arXiv client).
+(guardrails, requests, the arXiv client, and the web-search-free CLI).
+
+Web search calls the free ``web-search-free`` skill CLI, so no paid search
+API is used: set ``WEB_SEARCH_FREE_SKILL_PATH`` in ``.env`` to the installed
+skill directory. Every search is live; there is no mock mode.
 
 ``langgraph dev`` only watches Python files, so restart the server (or touch
 this file) after editing the notebook.

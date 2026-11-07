@@ -221,3 +221,6 @@ __marimo__/
 
 # LangGraph dev server state
 .langgraph_api/
+
+# web-search-free skill search cache
+.web-research-cache/
