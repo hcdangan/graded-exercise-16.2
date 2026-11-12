@@ -48,7 +48,7 @@ LangGraph Studio.
 </p>
 
 <p align="center">
-  Submitted as the <strong>16.3 Graded Mini Project</strong> for<br>
+  Submitted as the <strong>16.2 Graded Mini Project</strong> for<br>
   <strong>Week 16 — Research Assistant Agent with Tool Calls</strong><br>
   at the <strong>Asian Institute of Management</strong>.
 </p>
