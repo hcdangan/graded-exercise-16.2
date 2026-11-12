@@ -41,6 +41,18 @@ The notebook is the source of truth for the graph, tools, prompts, and five scen
 cells in a real module (skipping the demo cell), and exposes the compiled `app` as `graph` for
 LangGraph Studio.
 
+## Submitted to
+
+<p align="center">
+  <img src="assets/aim-logo.png" alt="Asian Institute of Management" width="220">
+</p>
+
+<p align="center">
+  Submitted as the <strong>16.3 Graded Mini Project</strong> for<br>
+  <strong>Week 16 — Research Assistant Agent with Tool Calls</strong><br>
+  at the <strong>Asian Institute of Management</strong>.
+</p>
+
 ## Architecture
 
 ```mermaid
@@ -317,18 +329,6 @@ The notebook reads these variables from `.env`:
   the server (or touch `graph.py`) after editing the notebook.
 - **Local-first by design.** The project expects Ollama, Laya, and the `web-search-free` skill to be
   available; it does not bundle a hosted model or a paid search service.
-
-## Submitted to
-
-<p align="center">
-  <img src="assets/aim-logo.png" alt="Asian Institute of Management" width="220">
-</p>
-
-<p align="center">
-  Submitted as the <strong>16.3 Graded Mini Project</strong> for<br>
-  <strong>Week 16 — Research Assistant Agent with Tool Calls</strong><br>
-  at the <strong>Asian Institute of Management</strong>.
-</p>
 
 ## License
 
